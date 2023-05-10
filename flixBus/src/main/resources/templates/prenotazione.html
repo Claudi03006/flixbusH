@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>FlixBus</title>
+<link rel="stylesheet" type="text/css" href="" th:href="@{/css/style.css}">
+</head>
+<body>
+	
+	<nav th:insert="~{login :: navigazione}"></nav>
+	
+	<h1 th:text="${titolo}">Segnaposto</h1>
+
+	<table>
+	  <tr>
+	    <th>Id</th>
+	    <th>Tratta</th>
+	    <th>Utente</th>
+	    <th>Posti</th>
+	  </tr>
+	  <tr th:each="p : ${elenco}">
+	    <td th:text="${p.id}">Row 1: Col 1</td>
+	    <td th:text="${p.tratta}">Row 1: Col 2</td>
+	    <td th:text="${p.utente}">Row 1: Col 1</td>
+	    <td th:text="${p.posti}">Row 1: Col 1</td>
+	  </tr>
+	</table>
+
+
+	
+</body>
+</html>

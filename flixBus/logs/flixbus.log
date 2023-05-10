@@ -1,0 +1,109 @@
+2023-05-09 15:59:16,317 INFO o.s.b.StartupInfoLogger [restartedMain] Starting FlixBusApplication using Java 17.0.6 with PID 55206 (/home/eddie/Scrivania/Claudio/flixBus/target/classes started by eddie in /home/eddie/Scrivania/Claudio/flixBus)
+2023-05-09 15:59:16,320 DEBUG o.s.b.StartupInfoLogger [restartedMain] Running with Spring Boot v3.0.5, Spring v6.0.7
+2023-05-09 15:59:16,321 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2023-05-09 15:59:20,029 INFO o.s.b.StartupInfoLogger [restartedMain] Started FlixBusApplication in 4.019 seconds (process running for 4.491)
+2023-05-09 15:59:20,033 ERROR c.s.FlixBusApplication [restartedMain] *** Flix Bus Start ERROR***
+2023-05-09 15:59:20,033 WARN c.s.FlixBusApplication [restartedMain] *** Flix Bus Start WARN***
+2023-05-09 15:59:20,033 INFO c.s.FlixBusApplication [restartedMain] *** Flix Bus Start INFO***
+2023-05-09 15:59:20,033 DEBUG c.s.FlixBusApplication [restartedMain] *** Flix Bus Start DEBUG***
+2023-05-09 15:59:25,229 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 15:59:25,230 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 15:59:34,128 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-10] DO LOGIN
+2023-05-09 15:59:34,129 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-10] pippo
+2023-05-09 15:59:34,129 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-10] pippo
+2023-05-09 15:59:34,191 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-10] user founded!!!
+2023-05-09 15:59:34,192 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-10] User id: 1/giuseppe.carbone672@gmail.com
+2023-05-09 15:59:34,200 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-4] HOME
+2023-05-09 15:59:34,201 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-4] TRATTE
+2023-05-09 15:59:43,006 DEBUG c.s.p.TrattaMVCController [http-nio-9005-exec-3] CERCA TRATTA DA: cascdas A: casdsdca
+2023-05-09 15:59:43,015 DEBUG c.s.p.TrattaMVCController [http-nio-9005-exec-3] N. results: 0
+2023-05-09 15:59:43,024 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 15:59:43,025 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:00:16,496 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:00:16,497 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:00:17,819 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:00:17,820 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:00:47,648 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-4] HOME
+2023-05-09 16:00:47,649 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-4] TRATTE
+2023-05-09 16:00:49,224 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-3] HOME
+2023-05-09 16:00:49,225 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-3] TRATTE
+2023-05-09 16:01:00,050 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-6] HOME
+2023-05-09 16:01:00,055 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-6] TRATTE
+2023-05-09 16:01:08,440 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-5] HOME
+2023-05-09 16:01:08,441 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-5] TRATTE
+2023-05-09 16:01:11,492 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-9] HOME
+2023-05-09 16:01:11,493 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-9] TRATTE
+2023-05-09 16:01:27,197 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:01:27,202 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:01:28,251 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 16:01:28,251 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:01:28,616 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-2] HOME
+2023-05-09 16:01:28,617 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-2] TRATTE
+2023-05-09 16:01:28,822 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:01:28,822 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:01:29,047 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:01:29,048 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:01:29,861 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:01:29,861 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:01:36,088 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 16:01:36,088 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:01:49,274 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-2] HOME
+2023-05-09 16:01:49,279 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-2] TRATTE
+2023-05-09 16:01:49,797 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:01:49,798 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:02:10,855 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:02:10,856 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:02:24,902 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:02:24,902 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:02:38,879 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 16:02:38,884 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:02:48,335 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-2] HOME
+2023-05-09 16:02:48,336 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-2] TRATTE
+2023-05-09 16:02:48,907 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:02:48,908 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:02:49,085 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:02:49,086 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:02:49,277 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:02:49,278 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:02:49,463 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 16:02:49,464 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:02:49,678 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-2] HOME
+2023-05-09 16:02:49,679 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-2] TRATTE
+2023-05-09 16:03:26,872 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:03:26,872 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:03:40,663 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:03:40,667 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:03:58,953 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:03:58,958 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:03:59,609 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-7] HOME
+2023-05-09 16:03:59,610 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-7] TRATTE
+2023-05-09 16:04:25,918 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-2] HOME
+2023-05-09 16:04:25,923 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-2] TRATTE
+2023-05-09 16:04:41,718 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-8] HOME
+2023-05-09 16:04:41,718 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-8] TRATTE
+2023-05-09 16:04:54,702 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:04:54,703 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:05:04,782 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-1] HOME
+2023-05-09 16:05:04,787 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-1] TRATTE
+2023-05-09 16:40:14,771 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:40:14,771 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:40:26,489 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] DO LOGIN
+2023-05-09 16:40:26,489 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] pippo
+2023-05-09 16:40:26,490 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] pippo
+2023-05-09 16:40:26,499 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] user founded!!!
+2023-05-09 16:40:26,499 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] User id: 1/giuseppe.carbone672@gmail.com
+2023-05-09 16:40:26,515 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-5] HOME
+2023-05-09 16:40:26,516 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-5] TRATTE
+2023-05-09 16:40:41,048 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-9] DO LOGOUT
+2023-05-09 16:40:41,051 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:40:41,052 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE
+2023-05-09 16:40:45,414 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] DO LOGIN
+2023-05-09 16:40:45,419 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] pippo
+2023-05-09 16:40:45,419 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] pippo
+2023-05-09 16:40:45,422 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] user founded!!!
+2023-05-09 16:40:45,422 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-1] User id: 1/giuseppe.carbone672@gmail.com
+2023-05-09 16:40:45,425 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-5] HOME
+2023-05-09 16:40:45,425 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-5] TRATTE
+2023-05-09 16:40:48,251 DEBUG c.s.p.UtenteMVCController [http-nio-9005-exec-9] DO LOGOUT
+2023-05-09 16:40:48,270 DEBUG c.s.p.HomeMVCController [http-nio-9005-exec-10] HOME
+2023-05-09 16:40:48,271 DEBUG c.s.s.TrattaServiceImpl [http-nio-9005-exec-10] TRATTE

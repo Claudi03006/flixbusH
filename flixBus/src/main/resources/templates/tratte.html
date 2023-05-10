@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>FlixBus</title>
+<link rel="stylesheet" type="text/css" href="" th:href="@{/css/style.css}">
+</head>
+<body>
+	
+	<nav th:insert="~{login :: navigazione}"></nav>
+	
+	<h1 th:text="${titolo}">Segnaposto</h1>
+
+	<ul>
+	  <li th:each="tratta : ${tratte}" > 
+		<a href="#" th:href="@{prenota/}+${tratta.id}" th:text="${tratta.partenza}+ ' - ' +${tratta.destinazione}"></a>
+	  </li>
+	</ul>
+
+
+	
+</body>
+</html>

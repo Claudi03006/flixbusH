@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- basic -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- mobile metas -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+        <!-- site metas -->
+        <title>FlixBus</title>
+        <meta name="keywords" content="">
+        <meta name="description" content="">
+        <meta name="author" content="">	
+        <!-- bootstrap css -->
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <!-- style css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!-- Responsive-->
+        <link rel="stylesheet" href="css/responsive.css">
+        <!-- fevicon -->
+        <link rel="icon" href="images/fevicon.png" type="image/gif" />
+        <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+        <!-- Tweaks for older IEs-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+        <!-- owl stylesheets --> 
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+
+    </head>
+    <body>
+        <!--header section start -->
+        <div id="index.html" class="header_section">
+            <div class="container">
+                <div class="row">
+                    <img  style=" height: 50px;" src="images/flixbus.svg"/>
+                  
+
+                        <div class="menu_text">
+                            <ul>
+                            
+                                <li><a href="./">Home</a></li>                                                    
+                                <li><a href="#tratte">Tratte</a></li>
+                                <li><a href="#login">Accedi</a></li>
+                                <li>
+                                    
+                                   <form  th:action="@{/utente/newreg}" method="get">
+                                      <a   href="#registrati">Registrati</a>
+                                   </form>
+                                  
+                                <li>
+                                   
+                                   <form  th:action="@{/utente/logout}" method="get">
+                                      <a   onclick="this.closest('form').submit();return false;" href="#">Logout</a>
+                                   </form>
+                                </li>
+                                
+                                
+                                <li>
+                       
+                                    <img onclick="openNav()" src="images/toggle-menu.png" class="toggle_menu"></span>
+                                    
+                                </li>
+                                
+                                  </ul>
+                                
+                                <div id="myNav" class="overlay">
+                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                                    <div class="overlay-content">
+                                        <a href="./">Home</a>
+                                        <a href="#about">Info</a>
+                                        <a href="#taxis">Tratte</a>
+                                        <a href="#login">Accedi</a>
+                                        <a href="#registrati">Registrati</a>
+                                        <a href="#contact">Contattaci</a>
+                                    </div>
+                                </div>
+                             
+                        </div>  
+                     
+                      
+                   
+                </div>
+            </div>
+        </div>
+        <!-- header section end -->
+        <!-- banner section start -->
+        <div class="banner_section">
+            <div class="container-fluid">
+                <div id="main_slider" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="book_now">
+                                        <h1 class="book_text">Chiama ora</h1>
+                                        <h1 class="call_text">(+39) 0824832742</h1>
+                                    </div>
+                                    <div class="image_1"><img src="images/sfondo.jpg"></div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h1 class="booking_text">Cerca Tratte</h1>
+                                    <div class="contact_bg">
+                                        <div class="input_main">
+                                            <div class="container">
+                                                <h2 class="request_text">Scegli partenza e destinazione</h2>
+                                                <form  th:action="@{/tratta/cercatratta}" method="get">
+                                                    <div class="form-group">
+                                                        <input type="text"  class="email-bt" placeholder="da" th:name="da">
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="text"  class="email-bt"  placeholder="a" th:name="a">
+                                                    </div>
+                                                    <div class="send_bt"><a onclick="this.closest('form').submit();return false;" href="#contact">Cerca</a></div>
+
+                                                </form>
+                                            </div> 
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- banner section end -->
+        <!-- our taxis section start -->
+        <div id="tratte" class="taxis_section layout_padding">
+            <div class="container">
+                <h1 class="our_text">Le nostre <span style="color: #f4db31;">Tratte</span></h1>
+                <div class="taxis_section_2">
+                    <div class="row">
+
+                        <!--              <ul>
+                                        <li th:each="tratta : ${tratte}" > 
+                                              <a href="#" th:href="@{prenota/}+${tratta.id}" th:text="${tratta.partenza}+ ' - ' +${tratta.destinazione}"></a>
+                                        </li>
+                                      </ul>-->
+
+            
+                        <table th:if="${not #lists.isEmpty(tratte)}">
+                            <thead style=" font-size: 18px; font-weight: bold;"> 
+
+                            <td> Partenza </td> 
+
+                            <td> Destinazione</td> 
+
+                            <td> Durata </td> 
+
+                            <td> Prenota </td>
+                            </thead>
+
+                            <tr th:each="tr1 : ${tratte}">
+                                <td th:text="${tr1.partenza}" />
+                                <td th:text="${tr1.destinazione}" />
+                                <td th:text="${tr1.durata}" />
+                                <td> <a href="#" th:href="@{/prenotazione/prenota/}+${tr1.id}">P+</a></td>
+                            </tr>
+
+                        </table>
+                        
+                        <h1 class="our_text" style=" background-color: orangered;color:white ;" th:if="${#lists.isEmpty(tratte)}"> Nessuna tratta trovata!!! <h1> 
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- our taxis section end -->
+        <!-- why ride section start -->
+          <!-- why ride section end -->
+        <!-- location section start -->
+        <div id="registrati" class="location_sectin layout_padding">
+            <div class="container-fluid">
+                <div class="location_main">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div th:if="${session.loginUser eq null}" class="col-sm-5">
+
+                            <form th:action="@{/utente/registrati}"
+                                  
+                                  th:object="${userRegBean}" 
+                                  method="post">
+
+
+                                <div class="col-md-6">
+
+<!--                                    <h1 th:text="${titolo}" ></h1>-->
+                                    <div class="contact_bg">
+                                        <div class="input_main">
+                                            <div class="container">
+                                                <h2 class="request_text">Form di Registrazione</h2>
+
+                                                <div class="form-group">
+                                                    <input type="email"  class="email-bt" placeholder="email" th:name="remail" th:field="*{email}">
+                                                    
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input type="email"  class="email-bt" placeholder="username" th:name="rusernamer" th:field="*{username}">
+                                                    
+                                                </div>
+                                                
+                                                <div class="form-group">
+                                                    <input type="password"  class="email-bt"  placeholder="password" th:name="rpassword1" th:field="*{password1}">
+                                                    <input type="password"  class="email-bt"  placeholder="ripeti password" th:name="rpassword2" th:field="*{password2}">
+                                                </div>
+                                                <div class="send_bt"><a onclick="this.closest('form').submit();return false;" >Registrati</a></div>
+
+                                            </div> 
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="image_7"><img src="images/flixbus_medium.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- why ride section end -->
+        <!-- location section start -->
+        <div id="login" class="location_sectin layout_padding">
+            <div class="container-fluid">
+                <div class="location_main">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div th:if="${session.loginUser eq null}"  class="col-sm-5">
+
+
+                            <form th:action="@{/utente/login}" method="post">
+
+
+                                <div class="col-md-6">
+
+                                    <!--                      <h1 th:text="${titolo}" ></h1>-->
+                                    <div class="contact_bg">
+                                        <div class="input_main">
+                                            <div class="container">
+                                                <h2 class="request_text">User and password</h2>
+
+                                                <div class="form-group">
+                                                    <input type="text"  class="email-bt" placeholder="username" th:name="username">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password"  class="email-bt"  placeholder="password" th:name="password">
+                                                </div>
+                                                <div class="send_bt"><a onclick="this.closest('form').submit();return false;" >Login</a></div>
+
+                                            </div> 
+                                        </div>
+
+                                    </div>
+                                </div>
+
+
+                            </form>
+
+                        </div>
+                        
+                        <div th:if="${session.loginUser ne null}"  class="col-sm-5">
+                           <h1 > Dati utente </h1>
+                           <div class="form-group">
+                               <h1 > Nickname: <span  th:text="${session.loginUser.nickname}" 
+                                                                      style="color: #f4db31;"></span></h1>
+                           </div>
+                           <div class="form-group">
+                               <h1 > Email: <span  th:text="${session.loginUser.email}" 
+                                                                      style="color: #f4db31;"></span></h1>
+                           </div>
+                           <div class="form-group">
+                               <h1 > Nome: <span  th:text="${session.loginUser.nome}" 
+                                                                      style="color: #f4db31;"></span></h1>
+                           </div>
+                            <div class="form-group">
+                               <h1 > Cognome: <span  th:text="${session.loginUser.cognome}" 
+                                                                      style="color: #f4db31;"></span></h1>
+                           </div>
+                        </div>
+                        
+                        <div class="col-sm-3">
+                            <div class="image_7"><img src="images/abba.jpeg"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- download section end -->
+        <!-- section footer start -->
+        <div class="section_footer ">
+            <div class="container"> 
+                <div class="footer_section_2">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <h2 class="account_text">Address</h2>
+                            <p class="ipsum_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <h2 class="account_text">Links</h2>
+                            <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Home</span></a></div>
+                            <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">About</span></a></div>
+                            <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Taxi</span></a></div>
+                            <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Booking</span></a></div>
+                            <div class="image-icon"><img src="images/bulit-icon.png"><span class="fb_text"><a href="#">Contact Us</span></a></div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <h2 class="account_text">Follow Us</h2>
+                            <div class="image-icon"><img src="images/fb-icon.png"><span class="fb_text"><a href="#">Facebook</a></span></div>
+                            <div class="image-icon"><img src="images/twitter-icon.png"><span class="fb_text"><a href="#">Twitter</a></span></div>
+                            <div class="image-icon"><img src="images/in-icon.png"><span class="fb_text"><a href="#">Linkedin</a></span></div>
+                            <div class="image-icon"><img src="images/youtube-icon.png"><span class="fb_text"><a href="#">Youtube</a></span></div>            
+                            <div class="image-icon"><img src="images/instagram-icon.png"><span class="fb_text"><a href="#">Instagram</a></span></div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-3">
+                            <h2 class="adderess_text">Newsletter</h2>
+                            <input type="" class="email_text" placeholder="Enter Your Email" name="Enter Your Email">
+                            <button class="subscribr_bt">SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section footer end -->
+    <!-- copyright section start -->
+    <div class="copyright_section">
+        <div class="container">
+            <p class="copyright">2019 All Rights Reserved. <a href="https://html.design">Free html  Templates</a></p>
+        </div>
+    </div>
+
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- javascript --> 
+    <script src="js/owl.carousel.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    <script>
+                                                    $(document).ready(function () {
+                                                        $(".fancybox").fancybox({
+                                                            openEffect: "none",
+                                                            closeEffect: "none"
+                                                        });
+
+                                                        $(".zoom").hover(function () {
+
+                                                            $(this).addClass('transition');
+                                                        }, function () {
+
+                                                            $(this).removeClass('transition');
+                                                        });
+                                                    });
+    </script> 
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>   
+</body>
+</html>
